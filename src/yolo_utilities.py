@@ -179,15 +179,3 @@ def check_yolo_dataset(image_folder, label_folder, output_folder):
             else:
                 print(f'Missing {label_folder}/{file.split(".")[0]}.txt')
             cv2.imwrite(f'{output_folder}/{file}', new_image)
-
-
-if __name__ == '__main__':
-    check_yolo_dataset("/home/beno/PycharmProjects/datasets/dataset700/images/train",
-                       "/home/beno/PycharmProjects/datasets/dataset700/labels/train",
-                       "/home/beno/PycharmProjects/tennis_scoreboard/data/700_check")
-
-    example_line = {"363": {"bbox": [193.06, 905.52, 549.29, 995.99],
-                            "serving_player": "name_2",
-                            "name_1": "Thiem",
-                            "name_2": "Khachanov",
-                            "score_1": "4-1-0", "score_2": "6-2-40"}}
