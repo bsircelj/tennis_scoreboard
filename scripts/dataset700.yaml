@@ -1,0 +1,6 @@
+path: ../datasets/dataset700
+train: images/train
+val: images/val
+test: images/test
+nc: 2
+names: ['name_1', 'name_2']
